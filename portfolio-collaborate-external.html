@@ -1,0 +1,65 @@
+---
+layout: default
+section_id: portfolio
+images:
+  - images/portfolio/collaborate-2-external/job_tiles_file_transfers_select.png
+  - images/portfolio/collaborate-2-external/job_tiles_file_transfers-errors.png
+  - images/portfolio/collaborate-2-external/job-details.pdf
+  - images/portfolio/collaborate-2-external/modal.pdf
+---
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-8 columns'>
+      <div class='mod modBoxedSlider'>
+        <div class='slides'>
+          {% for image in page.images %}
+            <div class="slide">
+              <img src="{{site.url}}/{{image}}" alt="">
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class='large-4 columns'>
+      <h3>Collaborate - External Post Production Supervisor</h3>
+      <p>
+        Clients needed a way to receive assets and complete episodes / movies without giving external vendors network or Digital Asset Management system access. The dashboard provides the external post with visibility across all Jobs. The details page provides relevant job details and the system enforces metadata entry standards for the DAM.
+      </p>
+      <ul class='info'>
+        <li>
+          <strong>Users:</strong>
+          External Post Production Supervisors
+        </li>
+        <li>
+          <strong>Clients:</strong>
+          Amazon Video, Warner Brothers
+        </li>
+        <li>
+          <strong>Date:</strong>
+          Summer 2016
+        </li>
+        <li>
+          <strong>Agency:</strong>
+          Levels Beyond
+        </li>
+      </ul>
+      <div class='spacing'></div>
+      <ul class='info'>
+        <li>
+          <div class='spacing'></div>
+          <a href='' title='previous'>
+            <i class='icon-left-open'></i>
+          </a>
+          <a href='portfolio.html' title='back to work list'>
+            <i class='icon-layout'></i>
+          </a>
+          <a href='' title='next'>
+            <i class='icon-right-open'></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>

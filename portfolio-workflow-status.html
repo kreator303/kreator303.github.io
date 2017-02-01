@@ -1,0 +1,65 @@
+---
+layout: default
+section_id: portfolio
+images:
+  - images/portfolio/workflow-status/workflow-status.png
+---
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-8 columns'>
+      <div class='mod modBoxedSlider'>
+        <div class='slides'>
+          {% for image in page.images %}
+            <div class="slide">
+              <img src="{{site.url}}/{{image}}" alt="">
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class='large-4 columns'>
+      <h3>Workflow Status</h3>
+      <p>
+        The first part of this company's value proposition is easily finding and grouping the assets that a user is serching for. The second part is to easily run customized automated workflows on the set of assets. Examples include transcoding, uloading to endpoints via Aspera, archiving / restoring, etc. Some of these workflows can take hours to complete, so the user needs to be able to check on the status of the ones they or their team members have executed. I desiged this interface to replace the legacy application's screen after identifying the primary use cases and pain points with the previous application. This application is designed to quickly give an overview of the statuses or all relevant workflows and to immediately surface any errors with a single click. It works on both desktops and tablets.
+      </p>
+      <ul class='info'>
+        <li>
+          <strong>Users:</strong>
+          All users executing workflows
+        </li>
+        <li>
+          <strong>Clients:</strong>
+          Levels Beyond
+        </li>
+        <li>
+          <strong>Date:</strong>
+          Fall 2016
+        </li>
+        <li>
+          <strong>Agency:</strong>
+        </li>
+        <li>
+          <strong>Responsibilities:</strong>
+          User research and interviews, wireframe design, comp approval, coordination with Product Managers
+        </li>
+      </ul>
+      <div class='spacing'></div>
+      <ul class='info'>
+        <li>
+          <div class='spacing'></div>
+          <a href='' title='previous'>
+            <i class='icon-left-open'></i>
+          </a>
+          <a href='portfolio.html' title='back to work list'>
+            <i class='icon-layout'></i>
+          </a>
+          <a href='' title='next'>
+            <i class='icon-right-open'></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>

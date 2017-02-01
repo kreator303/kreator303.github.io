@@ -1,0 +1,69 @@
+---
+layout: default
+section_id: portfolio
+images:
+  - images/portfolio/dms/deliverables-list.pdf
+  - images/portfolio/dms/dl-index-open.pdf
+  - images/portfolio/dms/modal-action-required.pdf
+  - images/portfolio/dms/production-status.pdf
+  - images/portfolio/dms/sequences-v1.pdf
+---
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-8 columns'>
+      <div class='mod modBoxedSlider'>
+        <div class='slides'>
+          {% for image in page.images %}
+            <div class="slide">
+              <img src="{{site.url}}/{{image}}" alt="">
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class='large-4 columns'>
+      <h3>Delivery Management System</h3>
+      <h4>Business Case</h4>
+      <p>
+        The feature film business is complex, and is still based on paper. I worked with Warner Bros to understand the business problem, interview users, and design and iterate a prototype system for managing all assets electronically. The prototype is currently being shown to Warner Bros executives.
+      </p>
+      <ul class='info'>
+        <li>
+          <strong>Client:</strong>
+          Warner Brothers
+        </li>
+        <li>
+          <strong>Date:</strong>
+          Fall 2014
+        </li>
+        <li>
+          <strong>Agency:</strong>
+          Levels Beyond
+        </li>
+        <li>
+          <strong>Responsibilities:</strong>
+          User research, wireframing, management of prototype creation
+        </li>
+      </ul>
+      <div class='spacing'></div>
+      <a class='button small' href=''>Visit website</a>
+      <div class='spacing'></div>
+      <ul class='info'>
+        <li>
+          <div class='spacing'></div>
+          <a href='' title='previous'>
+            <i class='icon-left-open'></i>
+          </a>
+          <a href='portfolio.html' title='back to work list'>
+            <i class='icon-layout'></i>
+          </a>
+          <a href='' title='next'>
+            <i class='icon-right-open'></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>

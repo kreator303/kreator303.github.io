@@ -1,0 +1,63 @@
+---
+layout: default
+section_id: portfolio
+images:
+  - images/portfolio/advanced-search/adv-search.png
+  - images/portfolio/advanced-search/filter7.pdf
+  - images/portfolio/advanced-search/UI_elements.jpg
+---
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-8 columns'>
+      <div class='mod modBoxedSlider'>
+        <div class='slides'>
+          {% for image in page.images %}
+            <div class="slide">
+              <img src="{{site.url}}/{{image}}" alt="">
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class='large-4 columns'>
+      <h3>Advanced Search</h3>
+      <p>
+        The power of the Reach Engine platform centers around the user quickly finding what they are looking for and leveraging the workflow engine to automate complex tasks. I designed a simple but powerful component to enable the search process and oversaw its implementation into several apps on different platforms including inside Adobe Premiere. This component replaces an out of date set of componenets from the legacy application. The metaphor scaled well and was also implemented in other places where object search was required, including the flagship Access product, Adobe Premiere Panel, Workflow management app and Collaborate, a tool designed for working with external vendors without DAM access.
+      </p>
+      <ul class='info'>
+        <li>
+          <strong>Users:</strong>
+          All users interacting with assets
+        </li>
+        <li>
+          <strong>Clients:</strong>
+          Levels Beyond
+        </li>
+        <li>
+          <strong>Date:</strong>
+          2015
+        </li>
+        <li>
+          <strong>Agency:</strong>
+        </li>
+      </ul>
+      <div class='spacing'></div>
+      <ul class='info'>
+        <li>
+          <div class='spacing'></div>
+          <a href='' title='previous'>
+            <i class='icon-left-open'></i>
+          </a>
+          <a href='portfolio.html' title='back to work list'>
+            <i class='icon-layout'></i>
+          </a>
+          <a href='' title='next'>
+            <i class='icon-right-open'></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
