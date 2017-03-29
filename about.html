@@ -1,172 +1,296 @@
 ---
 layout: default
-section_id: about
-skills:
-  - title: Web Design
-    percent: 84
-  - title: Web Development
-    percent: 95
-  - title: Site Management
-    percent: 70
-  - title: Branding
-    percent: 61
+section_id: home
+slides:
+  - bg: images/@stock/slide-2.jpg
+    title:
+      text: Making the simple complicated is commonplace; making the complicated simple, awesomely simple, that's creativity. - Charles Mingus
+      animation: bottom-to-top
+      class: large-8 medium-11
+    buttons:
+      animation: bottom-to-top
+      class: medium-12
+      items:
+        - text: Purchase Now
+          url: http://themeforest.net/user/honryou/portfolio?ref=honryou
+          class: boxed
+  - bg: images/@stock/slide-3.jpg
+    title:
+      text: It is simple but powerful
+      animation: bottom-to-top
+      class: large-7 large-offset-5 medium-9 medium-offset-3
+    buttons:
+      animation: bottom-to-top
+      class: large-7 large-offset-5 medium-9 medium-offset-3
+      items:
+        - text: Purchase Now
+          url: http://themeforest.net/user/honryou/portfolio?ref=honryou
+          class: boxed
+  - bg: images/@stock/slide-6.jpg
+    buttons:
+      animation: bottom-to-top slow
+      class: large-12
+      items:
+        - text: View Features
+          url: http://themeforest.net/user/honryou/portfolio?ref=honryou
+          class: boxed
+        - text: Purchase Now
+          url: http://themeforest.net/user/honryou/portfolio?ref=honryou
+    infos:
+      - text: "&nbsp;Creative and responsive design"
+        animation: bottom-to-top
+      - text: "&nbsp;Many helpful shortcodes"
+        animation: bottom-to-top
+      - text: "&nbsp;Simple but powerful theme options"
+        animation: bottom-to-top
+      - text: "&nbsp;Fully responsive"
+        animation: bottom-to-top
 
 testimonials:
-  - text: "Reprehenderit eos et non et ut eum reprehenderit quis sequi quia vel repellendus id. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est."
-    author: David White
-    position: Designer at Huglab
-    avatar: images/@stock/author-avatar-1.png
-  - text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing."
-    author: David White
-    position: Designer at Huglab
-    avatar: images/@stock/author-avatar-2.png
-  - text: "Reprehenderit eos et non et ut eum reprehenderit quis sequi quia vel repellendus id. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est."
-    author: David White
-    position: Designer at Huglab
-    avatar: images/@stock/author-avatar-3.png
+  - text: "Gerry has great intuition and is very creative. Brain storming ideas with him is a great experience for any business looking to redirect their corporate strategy."
+    author: Jerome Coste
+    position: Global Head at Google
+  - text: "Gerry is flat out incredible at what he does with designing, programming, and producing some of the most ingenious player products I've ever seen. His ability to think outside the box and come up ideas no one else has is simply amazing. Besides his toolbox full of skills, he comes prepped with a great easy going personality that makes him a joy to work with and a passion for keeping up with the latest and greatest technologies out there."
+    author: Keith Kacsh
+    position: Senior Systems Engineer at Weedmaps
+  - text: "Gerry is one of the most creative, intelligent people that I have had the privilege of working with. He has a unique ability to envision solutions that no one else sees. I would not hesitate to recommend him, and I look forward to the opportunity to work with him again."
+    author: Steven Granese
+    position: Director of Agile Consulting at AgileThought
+  - text: "Gerry is a diligent and creative thinker who approaches projects with fervor and inspiration. The IT world and specifically the creation of user interface media solutions requires foresight and innovation. Gerry delivers on all fronts and I value our collaborations."
+    author: Olivier Katz
+    position: Chief Operating Officer at Victory Hill Exhibitions
 
-members:
-  - name: Mark Wayne
-    position: founder
-    desc:
-      consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
-    avatar: images/@stock/member-1.jpg
-    socials:
-      - icon_class: fa fa-twitter
-        url: http://twitter.com
-      - icon_class: fa fa-facebook
-        url: http://facebook.com
-  - name: Kate Holms
-    position: Creative Director
-    desc:
-      consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
-    avatar: images/@stock/member-2.jpg
-    socials:
-      - icon_class: fa fa-twitter
-        url: http://twitter.com
-      - icon_class: fa fa-facebook
-        url: http://facebook.com
-      - icon_class: fa fa-dribbble
-        url: http://dribbble.com
-  - name: Tom Hason
-    position: Designer
-    desc:
-      consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
-    avatar: images/@stock/member-3.jpg
-    socials:
-      - icon_class: fa fa-twitter
-        url: http://twitter.com
-      - icon_class: fa fa-facebook
-        url: http://facebook.com
-      - icon_class: fa fa-tumblr
-        url: http://tumblr.com
-  - name: Lily Whrem
-    position: Developer
-    desc:
-      consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
-    avatar: images/@stock/member-4.jpg
-    socials:
-      - icon_class: fa fa-twitter
-        url: http://twitter.com
-      - icon_class: fa fa-facebook
-        url: http://facebook.com
 ---
+<!--
+<div class='advanced mod modDefaultSlider'>
+  <div class='sequence' data-autostop='on' data-timeout='0'>
+    <a class='sequence-prev' href='javascript:void(0);'>
+      <span></span>
+    </a>
+    <a class='sequence-next' href='javascript:void(0);'>
+      <span></span>
+    </a>
+    <ul class='sequence-pagination'>
+      {% for slide in page.slides %}
+        {% if forloop.index == 1 %}
+          <li class='current'></li>
+        {% else %}
+          <li></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    <ul class='sequence-canvas'>
+      {% for slide in page.slides %}
+        {% if forloop.index == 1 %}
+          {% assign class = "static" %}
+        {% else %}
+          {% assign class = '' %}
+        {% endif %}
 
-
+        <li class='frame {{class}}'>
+          <div class='bg' style='background-image: url({{slide.bg}});'></div>
+          {% if slide.infos %}
+            {% for info in slide.infos %}
+              <div class='info{{forloop.index}} {{info.animation}}' style=''>
+                <div class='row'>
+                  <div class='medium-10 large-8 columns'>
+                    <p class='fa fa-check' style='color: #333;'>{{info.text}}</p>
+                    <div class='spacing'></div>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          {% else %}
+            <div class='title {{slide.title.animation}}' style='color: rgb(255, 255, 255);'>
+              <div class='row'>
+                <div class='{{slide.title.class}} columns'>
+                  <h2>{{slide.title.text}}</h2>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+          <div class='buttons-wrapper {{slide.buttons.animation}}' style=''>
+            <div class='row'>
+              <div class='{{slide.buttons.class}} columns'>
+                <div class='two spacing'></div>
+                {% for button in slide.buttons.items %}
+                  <a target="_blank" class='button {{button.class}}' href='{{button.url}}'>{{button.text}}</a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+-->
 <div class='full'>
   <div class='row'>
     <div class='large-12 columns'>
-      <h4 style='color: #999'>We are pround of</h4>
-      <h2>Our history</h2>
+      <h4 style='color: #999'>Background and Capabilities</h4>
+      <h2>Loads of experience with big flashy clients O.o</h2>
       <div class='spacing'></div>
-      <p>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.</p>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.</p>
+      <p>At Kreator303 we take a different approach to UX. We are absolutely available to crank out UX artifacts for projects. We take pride in our deliverables and we play very well with others. Additionally, our backgrounds in development, product management, business strategy, and SCRUM allow us to interact with different departments and roles very efficiently. We can work with developers to tailor UX deliverables to the stack and techniques they choose, and we can work with them to find the right balance of UX tightness and coding efficiency. We can take wireframes and comps and decompose them into JIRAs according to the best practices adopted by the client. Whenever possible, we are proponents of designing around the user. Beyond just interfaces, this can include product design or can include using user centric domain objects to drive consistency between the UI and back end.</p>
+      <p>We work best when paired with designers. We can even run high fidelity wireframes that can double as comps. If you would like to further explore a fit, please <a href='contact.html'>contact us.</a></p>
+      <p>I am Gerry Koh. I have been in User Experience since the days before Information Architects. I leverage my skills in UX, development, Product Management, and Business Strategy to design interfaces that balance the needs of the users with business objectives elegantly. I have experience leading teams in both development and UX. I have designed and coded applications for desktops, web browsers, tablets, phones, and more. The Portfolio section contains a few recent highlights. Feel free to contact me to have a discussion about the needs of your organization and to explore a fit.</p>
     </div>
   </div>
   <div class='three spacing'></div>
 </div>
+
+<!--
 <div class='full' style='background: #f5f5f5'>
   <div class='row'>
-    <div class='medium-6 columns'>
-      <h3>Our skills</h3>
-      <div class='spacing'></div>
-      <div class='mod modBarGraph'>
-        <ul class='bars'>
-          {% for skill in page.skills %}
-            <li>
-              <h4 style=''>
-                {{skill.title}}
-                <strong>{{skill.percent}}%</strong>
-              </h4>
-              <p class='highlighted' data-percent='{{skill.percent}}'></p>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-    <div class='medium-6 columns'>
-      <h3>The testimonials</h3>
-      <div class='mod modTestimonials simple'>
-        <div class='row'>
-          <div class='small-12 columns'>
-            <div class='items'>
-              {% for t in page.testimonials %}
-                <div class='item'>
-                  <p class='quote'>{{t.text}}</p>
-                  <div class='author'>
-                    <p class='author-avatar'>
-                      <img alt="" src="{{t.avatar}}" />
-                    </p>
-                    <p class='author-name'>
-                      -
-                      <strong>
-                        {{t.author}}
-                      </strong>
-                      , {{t.position}}
-                    </p>
-                  </div>
-                </div>
-              {% endfor %}
+    <div class='large-12 columns'>
+      <div class='mod modBoxedTextSlider'>
+        <div class='boxes'>
+          {% for box in page.boxes %}
+            <div class='box' style=''>
+              <i class='{{box.icon_class}}'></i>
+              <h4>{{box.title}}</h4>
+              <p>{{box.text}}</p>
             </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </div>
   </div>
-  <div class='two spacing'></div>
+  <div class='one spacing'></div>
 </div>
+-->
+
+
+
+<!--
 <div class='full'>
   <div class='row'>
-    <div class='large-12 columns'>
-      <h3>Our team</h3>
+    <div class='medium-6 columns'>
+      <img class="fadeinleft" width="500" height="340" alt="" src="images/@stock/macbook.png" />
+    </div>
+    <div class='medium-6 columns'>
       <div class='spacing'></div>
+      <h4 style='color: #999'>We all love</h4>
+      <h2>Fully responsive</h2>
+      <div class='spacing'></div>
+      <p>This is the text about your Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.</p>
+      <div class='spacing'></div>
+      <a class='button small' href='#'>Learn more</a>
     </div>
   </div>
+  <div class='four spacing'></div>
   <div class='row'>
-    {% for member in page.members %}
-      <div class='small-6 medium-3 large-3 columns'>
-        <div class='mod modTeamMember style-2'>
-          <div class='member'>
-            <img class="avatar" alt="" src="{{site.url}}/{{member.avatar}}" />
-            <div class='overlay'>
-              <ul class='socials'>
-                {% for social in member.socials %}
-                  <li>
-                    <a href='{{social.url}}'>
-                      <i class='{{social.icon_class}}'></i>
-                    </a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-          <h3>{{member.name}}</h3>
-          <p class='position'>{{member.position}}</p>
-          <p>{{member.desc}}</p>
-          <div class='two spacing'></div>
+    <div class='medium-6 columns'>
+      <div class='two spacing'></div>
+      <h4 style='color: #999'>Simple</h4>
+      <h2>Easy to use</h2>
+      <div class='spacing'></div>
+      <ul class='shortcode-list'>
+        <li>
+          <i class='fa fa-check'></i>
+          This is a check list item, htis is a check list item
+        </li>
+        <li>
+          <i class='fa fa-check'></i>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit ipsum
+        </li>
+        <li>
+          <i class='fa fa-check'></i>
+          Sed diam nonummy nibh euismod tincidunt ut, lorem ipsum dolor sit amet
+        </li>
+        <li>
+          <i class='fa fa-check'></i>
+          Dolore magna aliquam erat volutpat consectetu amet magna adipiscing
+        </li>
+      </ul>
+      <div class='spacing'></div>
+      <a class='button small' href='#'>Learn more</a>
+    </div>
+    <div class='medium-6 columns'>
+      <img class="fadeinright" width="500" height="400" alt="" src="images/@stock/circle-1.png" />
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
+
+
+
+
+<div class='full parallax' style='background: #f5f5f5'>
+  <div class='row'>
+    {% for milestone in page.milestones %}
+      <div class='medium-3 large-3 columns right-border left-border'>
+        <div class='mod modMilestone no-icon'>
+          <strong data-from='{{milestone.from}}' data-to='{{milestone.to}}'>&nbsp;</strong>
+          <span>{{milestone.title}}</span>
+          <div class='spacing'></div>
         </div>
       </div>
     {% endfor %}
   </div>
-  <div class='three spacing'></div>
+  <div class='four spacing'></div>
+</div>
+<div class='full no-padding' style='background: #444; color: #fff'>
+  <div class='two spacing'></div>
+  <div class='mod modCallToAction'>
+    <div class='row'>
+      <div class='medium-9 large-9 columns'>
+        <p>Like what you see here? Checkout this theme and start to build your site immediately.</p>
+      </div>
+      <div class='medium-3 large-3 columns'>
+        <a class='boxed button' href='http://themeforest.net/user/honryou/portfolio?ref=honryou'>Learn more</a>
+      </div>
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div>
+<div class='full'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <p class='centered-text'>
+        <i class='fa fa-quote-left' style='color: #F9CE06; font-size: 36px;'></i>
+      </p>
+    </div>
+  </div>
+-->
+
+<div class='full' style='background: #f5f5f5'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <div class='mod modTestimonials'>
+        <div class='row'>
+          <div class='small-12 columns'>
+            <div class='items centered-text'>
+              {% for t in page.testimonials  %}
+                <div class='item'>
+                  <p class='quote'>{{t.text}}</p>
+                  <p class='author'>- {{t.author}}, {{t.position}}</p>
+                  <div class='two spacing'></div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+          <div class='spacing'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
+<!--
+<div class='full parallax' style='background-image: url(../images/@stock/customers-bg.jpg); color: #fff;'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <div class='mod modClients' data-slides_to_show='4'>
+        <div class='clients'>
+          {% for client in page.clients %}
+            <div><img alt="" src="{{client}}" /></div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+  <!-- <div class='two spacing'></div> -->
+</div>
 </div>

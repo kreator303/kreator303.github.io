@@ -1,6 +1,6 @@
 ---
 layout: default
-section_id: services
+section_id: about
 services:
   - icon_class: fa fa-trophy
     title: Design
@@ -22,6 +22,21 @@ services:
     title: Marketing
     desc:
       Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
+
+      testimonials:
+        - text: "Gerry has great intuition and is very creative. Brain storming ideas with him is a great experience for any business looking to redirect their corporate strategy."
+          author: Jerome Coste
+          position: Global Head at Google
+        - text: "Gerry is flat out incredible at what he does with designing, programming, and producing some of the most ingenious player products I've ever seen. His ability to think outside the box and come up ideas no one else has is simply amazing. Besides his toolbox full of skills, he comes prepped with a great easy going personality that makes him a joy to work with and a passion for keeping up with the latest and greatest technologies out there."
+          author: Keith Kacsh
+          position: Senior Systems Engineer at Weedmaps
+        - text: "Gerry is one of the most creative, intelligent people that I have had the privilege of working with. He has a unique ability to envision solutions that no one else sees. I would not hesitate to recommend him, and I look forward to the opportunity to work with him again."
+          author: Steven Granese
+          position: Director of Agile Consulting at AgileThought
+        - text: "Gerry is a diligent 1and creative thinker who approaches projects with fervor and inspiration. The IT world and specifically the creation of user interface media solutions requires foresight and innovation.Gerry delivers on all fronts and I value our collaborations"
+          author: Olivier Katz
+          position: Chief Operating Officer at Victory Hill Exhibitions
+
 ---
 
 
@@ -31,8 +46,9 @@ services:
       <h4 style='color: #999'>We focus on</h4>
       <h2>Our main services</h2>
       <div class='spacing'></div>
-      <p>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.</p>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.</p>
+      <p>At Kreator303 we take a different approach to UX. We are absolutely available to crank out UX artifacts for projects. We take pride in our deliverables and we play very well with others. Additionally, our backgrounds in development, product management, business strategy, and SCRUM allow us to interact with different departments and roles very efficiently. We can work with developers to tailor UX deliverables to the stack and techniques they choose, and we can work with them to find the right balance of UX tightness and coding efficiency. We can take wireframes and comps and decompose them into JIRAs according to the best practices adopted by the client. Whenever possible, we are proponents of designing around the user. Beyond just interfaces, this can include product design or can include using user centric domain objects to drive consistency between the UI and back end.</p>
+      <p>We work best when paired with designers. We can even run high fidelity wireframes that can double as comps. If you would like to further explore a fit, please <a href='contact.html'>contact us.</a></p>
+      <p>I am Gerry Koh. I have been in User Experience since the days before Information Architects. I leverage my skills in UX, development, Product Management, and Business Strategy to design interfaces that balance the needs of the users with business objectives elegantly. I have experience leading teams in both development and UX. I have designed and coded applications for desktops, web browsers, tablets, phones, and more. The Portfolio section contains a few recent highlights. Feel free to contact me to have a discussion about the needs of your organization and to explore a fit.</p>
     </div>
   </div>
   <div class='three spacing'></div>
@@ -54,4 +70,66 @@ services:
     </div>
   </div>
   <div class='four spacing'></div>
+</div>
+<div class='advanced mod modDefaultSlider'>
+  <div class='sequence' data-autostop='on' data-timeout='0'>
+    <a class='sequence-prev' href='javascript:void(0);'>
+      <span></span>
+    </a>
+    <a class='sequence-next' href='javascript:void(0);'>
+      <span></span>
+    </a>
+    <ul class='sequence-pagination'>
+      {% for slide in page.slides %}
+        {% if forloop.index == 1 %}
+          <li class='current'></li>
+        {% else %}
+          <li></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    <ul class='sequence-canvas'>
+      {% for slide in page.slides %}
+        {% if forloop.index == 1 %}
+          {% assign class = "static" %}
+        {% else %}
+          {% assign class = '' %}
+        {% endif %}
+
+        <li class='frame {{class}}'>
+          <div class='bg' style='background-image: url({{slide.bg}});'></div>
+          {% if slide.infos %}
+            {% for info in slide.infos %}
+              <div class='info{{forloop.index}} {{info.animation}}' style=''>
+                <div class='row'>
+                  <div class='medium-10 large-8 columns'>
+                    <p class='fa fa-check' style='color: #333;'>{{info.text}}</p>
+                    <div class='spacing'></div>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          {% else %}
+            <div class='title {{slide.title.animation}}' style='color: rgb(255, 255, 255);'>
+              <div class='row'>
+                <div class='{{slide.title.class}} columns'>
+                  <h2>{{slide.title.text}}</h2>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+          <div class='buttons-wrapper {{slide.buttons.animation}}' style=''>
+            <div class='row'>
+              <div class='{{slide.buttons.class}} columns'>
+                <div class='two spacing'></div>
+                {% for button in slide.buttons.items %}
+                  <a target="_blank" class='button {{button.class}}' href='{{button.url}}'>{{button.text}}</a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
