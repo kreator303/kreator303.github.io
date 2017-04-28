@@ -74,7 +74,7 @@ jQuery(document).foundation();
       submitHandler: function(form) {
         $.ajax({
           dataType: 'jsonp',
-          url: "http://getsimpleform.com/messages/ajax?form_api_token=4bf010b65da5261889805b6789e5132e",
+          url: "https://getsimpleform.com/messages/ajax?form_api_token=4bf010b65da5261889805b6789e5132e",
           data: $(form).serialize(),
           success: function(data) {
             if(data.success == true) {
