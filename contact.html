@@ -9,13 +9,24 @@ section_id: contact
       <div class='form'>
         <div class='row'>
 
-          <script type="text/javascript"> id=210845; t=1; ctxt="Contact Me"; </script>
-          							<script type="text/javascript" src="http://kontactr.com/kpu/kontactr.js"></script>
 
-          <center>
-            <script type="text/javascript"> id = 210845; </script>
-            <script type="text/javascript" src="http://kontactr.com/wp.js"></script>
-          </center>
+
+          <form id='contact_form' method='POST' action="https://getsimpleform.com/messages?form_api_token=4bf010b65da5261889805b6789e5132e">
+            <div class='large-12 columns'>
+              <p id='thanks' style='display: none;'>
+                Thanks for contacting us, we'll be in touch soon!
+              </p>
+            </div>
+            <div class='medium-12 columns'>
+              <input class='required' name='name' placeholder='NAME' type='text'>
+              <input class='required email' name='email' placeholder='EMAIL' type='text'>
+              <input class='required' name='subject' placeholder='SUBJECT' type='text'>
+              <textarea class='required' name='message' placeholder='MESSAGE'></textarea>
+              <input class='button white' type='submit'>
+            </div>
+          </form>
+
+
         </div>
       </div>
       <div class='two spacing'></div>

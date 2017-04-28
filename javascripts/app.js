@@ -74,7 +74,7 @@ jQuery(document).foundation();
       submitHandler: function(form) {
         $.ajax({
           type: 'POST',
-          url: 'send.php',
+          url: 'https://getsimpleform.com/messages?form_api_token=4bf010b65da5261889805b6789e5132e',
           data: $(form).serialize(),
           success: function(data) {
             if(data.match(/success/)) {
@@ -800,5 +800,3 @@ jQuery(document).foundation();
     }
   })
 })(Tc.$);
-
-
