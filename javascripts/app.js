@@ -73,13 +73,17 @@ jQuery(document).foundation();
       messages: { },
       submitHandler: function(form) {
         $.ajax({
-          type: 'POST',
-          url: 'https://getsimpleform.com/messages?form_api_token=4bf010b65da5261889805b6789e5132e',
+          dataType: 'jsonp',
+          url: "http://getsimpleform.com/messages/ajax?form_api_token=4bf010b65da5261889805b6789e5132e",
           data: $(form).serialize(),
           success: function(data) {
-            if(data.match(/success/)) {
+            if(data.success == true) {
               $(form).trigger('reset');
               $('#thanks').show().fadeOut(5000);
+              console.log("form submitted successfully");
+            }
+            else {
+              console.log("form failed to submit");
             }
           }
         });
