@@ -4,6 +4,9 @@
 - name: About
   path: about.html
   section_id: about
+- name: Process
+  path: process.html
+  section_id: process
 - name: Contact
   path: contact.html
   section_id: contact
